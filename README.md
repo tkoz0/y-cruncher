@@ -9,6 +9,7 @@ infeasible and not appropriate for a git repository).
 The machine I am currently using to compute digits is described below. Many of
 the components were found recycled.
 
+- OS: Ubuntu Server 18.04 with Linux kernel 4.15.0
 - System board: Asus P6T Deluxe V2 (found recycled)
 - CPU: i7-920 @ 2.67 GHz (4C / 8T) (found with system board)
 - Memory: 6x 4 GiB triple channel PC3-12800U (DDR3-1600) running at 1066 MHz (taken
