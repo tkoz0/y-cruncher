@@ -18,3 +18,7 @@ Computation 1: "e - 20200120-235640.txt"
 - e: 100B digits, ~23 hours
 - This computation ran smoothly without interruption and finished sooner than I
 was expecting
+
+Computation 2:
+- e: 300B digits
+- Started on 2020-01-21
