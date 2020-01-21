@@ -11,9 +11,9 @@ the components were found recycled.
 
 - System board: Asus P6T Deluxe V2 (found recycled)
 - CPU: i7-920 @ 2.67 GHz (4C / 8T) (found with system board)
-- Memory: 6x 4GB triple channel PC3-12800U (DDR3-1600) running at 1066 MHz (taken
+- Memory: 6x 4 GiB triple channel PC3-12800U (DDR3-1600) running at 1066 MHz (taken
 from a few recycled Dell Optiplex 7010 computers)
 - GPU: NVidia GeForce 8400GS
 - PSU: Corsair HX850
-- Disks: 6x 250GB SATA (RAID0 for computation scratch) and 2x 250GB IDE (OS and
-RAID0 to store digits)
+- Disks: 6x 250 GB SATA (RAID0 for computation scratch) and 2x 250 GB IDE (OS
+and RAID0 to store digits)
