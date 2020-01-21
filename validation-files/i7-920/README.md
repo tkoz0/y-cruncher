@@ -15,10 +15,12 @@ RAID0 volume
 Below is a list of computations performed on this machine:
 
 Computation 1: "e - 20200120-235640.txt"
-- e: 100B digits, ~23 hours
+- e: 100B digits, ~23 hours (on 2020-01-20)
 - This computation ran smoothly without interruption and finished sooner than I
-was expecting
+was expecting.
 
 Computation 2:
 - e: 300B digits
 - Started on 2020-01-21
+- Since the previous computation went smoothly, I decided to compute e again,
+but to as much precision as disk space will allow.
