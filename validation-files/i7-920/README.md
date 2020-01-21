@@ -1,4 +1,4 @@
-#i7-920 PC
+# i7-920 PC
 
 System specifications:
 - OS: Ubuntu Server 18.04 with Linux kernel 4.15.0
@@ -14,7 +14,7 @@ RAID0 volume
 
 Below is a list of computations performed on this machine:
 
-Computation 1 "e - 20200120-235640.txt"
+Computation 1: "e - 20200120-235640.txt"
 - e: 100B digits, ~23 hours
 - This computation ran smoothly without interruption and finished sooner than I
 was expecting
