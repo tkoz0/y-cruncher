@@ -1,6 +1,7 @@
 # i7-920 PC
 
 System specifications:
+- Date assembled: 2020-01-19
 - OS: Ubuntu Server 18.04 with Linux kernel 4.15.0
 - System board: Asus P6T Deluxe V2 (found recycled)
 - CPU: i7-920 @ 2.67 GHz (4C / 8T) (found with system board)
