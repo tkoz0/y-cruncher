@@ -22,6 +22,7 @@ was expecting.
 
 Computation 2:
 - e: 300B digits
-- Started on 2020-01-21
+- Started on 2020-01-21, completed on 2020-01-24
 - Since the previous computation went smoothly, I decided to compute e again,
-but to as much precision as disk space will allow.
+but to as much precision as disk space will allow. This also completed without
+issues.

@@ -1,0 +1,163 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9503
+Tuning:                08-NHM ~ Ushio
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-74-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i7 CPU 920 @ 2.67GHz
+    Logical Cores:     8
+    Physical Cores:    4
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,672,658,976 Hz
+
+Motherboard:
+    Manufacturer:      ASUSTeK Computer INC.
+    Model:             P6T DELUXE V2
+    Version:           Rev 1.xx
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     25,264,484,352 (23.5 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              e
+Algorithm:             Taylor Series of exp(1)
+Decimal Digits:        300,000,000,050
+Hexadecimal Digits:    249,144,607,159
+Computation Mode:      Swap Mode
+Threading Mode:        Push Pool  ->  8 / ?  (randomization on)
+Working Memory:        24,128,718,848 (22.5 GiB)
+Total Memory:          24,696,061,952 (23.0 GiB)
+
+Logical Largest Checkpoint:    245,409,939,816 ( 229 GiB)
+Logical Peak Disk Usage:       1,281,680,244,280 (1.17 TiB)
+Logical Disk Bytes Read:       25,322,014,705,976 (23.0 TiB)
+Logical Disk Bytes Written:    20,908,101,466,848 (19.0 TiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "e"
+        Algorithm : "exp(1)"
+    }
+    ComputeSize : {
+        DecimalDigits : 300000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : "/mnt/output"
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "swap"
+    Parallelism : {
+        TaskDecomposition : 8
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+    Memory : 24696061952
+    Checkpointing : {
+        Enabled : "true"
+        PostCheckpointCommand : ""
+    }
+    FarMemoryTuning : {
+        BytesPerSeek : 1048576
+        ParallelAccess : "none"
+    }
+    FarMemoryConfig : {
+        Framework : "disk-raid0"
+        InterleaveWidth : 262144
+        BufferPerLane : 67108864
+        Checksums : "true"
+        RawIO : "true"
+        Lanes : [
+            {   //  Lane 0
+                Path : "/mnt/scratch"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+        ]
+    }
+}
+
+Start Date:            Tue Jan 21 00:54:06 2020
+End Date:              Fri Jan 24 11:11:04 2020
+
+Total Computation Time:    256828.525 seconds
+Start-to-End Wall Time:    296217.684 seconds
+
+CPU Utilization:           298.90 %  +  1.14 % kernel overhead
+Multi-core Efficiency:     37.36 %  +  0.14 % kernel overhead
+
+Last Decimal Digits:
+0158882323 2908814096 8412843717 6084423076 6433641255  :  300,000,000,000
+9355127284 1401244788 9381016336 6277678446 9147541854  :  300,000,000,050
+
+Last Hexadecimal Digits:
+3925ba43b4 84bf427e1e 37b1dd8021 5e07f19b0c c826269b9e  :  249,144,607,150
+89ed02de0
+
+SHA256-dec(300,000,000,051 - 300,000,000,150): 84e711b960a107bc94babfd5c8a36425ab3dd2a93cdfb4d3d54f6c54a631de0b
+
+Dec Counts: {29999971611,29999906431,30000027770,29999818258,30000353598,29999932031,29999875908,29999952401,30000155227,30000006815}
+Hex Counts: {15571721863,15571569754,15571475776,15571416787,15571413676,15571687003,15571677188,15571621039,15571314611,15571661437,15571403060,15571374866,15571677483,15571533833,15571490262,15571568521}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1238649488711004000
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 2153862490353657716
+
+Spot Check:                 Good through 250,000,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          98,642,664
+Reference Clock 2:          14,331,438
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Tue Jan 21 00:54:06 2020	0.133	Working Memory
+Tue Jan 21 00:54:21 2020	14.556	Working Memory: 22.5 GiB  (locked, spread: 100%/1)
+Tue Jan 21 00:54:21 2020	14.556	Twiddle Tables
+Tue Jan 21 00:54:22 2020	15.849	Twiddle Tables:  477 MiB  (locked, spread: 100%/1)
+Tue Jan 21 00:54:22 2020	15.861	I/O Buffers
+Tue Jan 21 00:54:24 2020	17.669	I/O Buffers: 64.0 MiB  (locked, spread: 100%/1)
+Tue Jan 21 00:54:24 2020	17.967	Begin Computation
+Tue Jan 21 00:54:24 2020	17.993	Series Hyperdescent...  29,877,360,206 terms  (Expansion Factor = 1.000)
+Wed Jan 22 15:12:02 2020	137876.042	Finishing Series
+Wed Jan 22 15:12:05 2020	137878.539	Large Division
+Thu Jan 23 04:42:28 2020	186501.543	Writing Hexadecimal Digits
+Thu Jan 23 05:30:19 2020	189372.694	Base Converting
+Fri Jan 24 01:02:46 2020	259719.698	Writing Decimal Digits
+Fri Jan 24 01:53:06 2020	262740.233	Verifying Base Conversion
+Fri Jan 24 09:56:38 2020	291752.073	Verifying Binary Output
+Fri Jan 24 10:09:13 2020	292506.642	Verifying Decimal Output
+Fri Jan 24 10:41:27 2020	294441.169	Verifying Hexadecimal Output
+Fri Jan 24 11:11:04 2020	296217.683	End Computation
+
+----
+
+Checksum0: de2c799914d0199a22565fc91f3ca4625efa008622a6f2659efadd1c0db59e1e7e36f0a1141535211228244139667c9255d80c4030f57ec7a4448518ea64cd75
+Checksum1: 3c95d871b2782d2b705a582178583fe71c6e2fc1327ba4365d3472aef392f21e238e123aee3ff2cea0a5301b42acc46b0cffa14ade833aa618806b5489a47337
