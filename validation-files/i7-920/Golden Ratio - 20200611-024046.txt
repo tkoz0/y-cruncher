@@ -1,0 +1,272 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                08-NHM ~ Ushio
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i7 CPU 920 @ 2.67GHz
+    Logical Cores:     8
+    Physical Cores:    4
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,672,627,680 Hz
+
+Motherboard:
+    Manufacturer:      ASUSTeK Computer INC.
+    Model:             P6T DELUXE V2
+    Version:           Rev 1.xx
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     25,264,455,680 (23.5 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Golden Ratio
+Algorithm:             Newton's Method
+Decimal Digits:        25,000,000,050
+Hexadecimal Digits:    20,762,050,635
+Computation Mode:      Swap Mode
+Threading Mode:        Push Pool  ->  8 / ?  (randomization on)
+Working Memory:        22,507,128,448 (21.0 GiB)
+Total Memory:          23,622,320,128 (22.0 GiB)
+
+Logical Largest Checkpoint:    10,381,025,416 (9.67 GiB)
+Logical Peak Disk Usage:       106,810,881,512 (99.5 GiB)
+Logical Disk Bytes Read:       721,347,705,468 ( 672 GiB)
+Logical Disk Bytes Written:    575,430,366,404 ( 536 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "goldenratio"
+        Algorithm : "newton"
+    }
+    ComputeSize : {
+        DecimalDigits : 25000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "swap"
+    Parallelism : {
+        TaskDecomposition : 8
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+    Memory : 23622320128
+    Checkpointing : {
+        Enabled : "true"
+        PostCheckpointCommand : ""
+    }
+    FarMemoryTuning : {
+        BytesPerSeek : 12582912
+        ParallelAccess : "none"
+    }
+    FarMemoryConfig : {
+        Framework : "disk-raid0"
+        InterleaveWidth : 262144
+        BufferPerLane : 67108864
+        Checksums : "true"
+        RawIO : "true"
+        Lanes : [
+            {   //  Lane 0
+                Path : "/mnt/y1"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 1
+                Path : "/mnt/y2"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 2
+                Path : "/mnt/y3"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 3
+                Path : "/mnt/y4"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 4
+                Path : "/mnt/y5"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 5
+                Path : "/mnt/y6"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 6
+                Path : "/mnt/y7"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 7
+                Path : "/mnt/y8"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 8
+                Path : "/mnt/y9"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 9
+                Path : "/mnt/y10"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 10
+                Path : "/mnt/y11"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 11
+                Path : "/mnt/y12"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+        ]
+    }
+}
+
+Start Date:            Thu Jun 11 01:15:07 2020
+End Date:              Thu Jun 11 02:40:43 2020
+
+Total Computation Time:    3334.541 seconds
+Start-to-End Wall Time:    5135.780 seconds
+
+CPU Utilization:           507.48 %  +  2.30 % kernel overhead
+Multi-core Efficiency:     63.43 %  +  0.29 % kernel overhead
+
+Last Decimal Digits:
+8441404858 0755243310 6389683605 4809510515 4851784530  :  25,000,000,000
+7002404844 6154932719 8395744661 4327577199 3217699890  :  25,000,000,050
+
+Last Hexadecimal Digits:
+a26d343c5d 96a9f8574d c0b3e07b09 44cf6755de 19add23861  :  20,762,050,600
+badb86b504 5ad08df9a0 61ed7bacf6 2220c
+
+SHA256-dec(25,000,000,051 - 25,000,000,150): 26f910e9afff1836870199ab8a3d1eef73797395a045e9f221ef83d8b26dfda7
+
+Dec Counts: {2500027434,2499964448,2499939357,2499980111,2499989609,2500027712,2499991953,2500064857,2500034325,2499980244}
+Hex Counts: {1297685162,1297623288,1297608627,1297621189,1297592712,1297681982,1297589083,1297609017,1297673032,1297638766,1297601988,1297626697,1297654765,1297652383,1297592086,1297599858}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1241408919718183945
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 905492305066451856
+
+Spot Check:                 Good through 25,000,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          93,283,284
+Reference Clock 2:          10,387,811
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Thu Jun 11 01:15:07 2020	0.053	Working Memory
+Thu Jun 11 01:15:20 2020	12.662	Working Memory: 21.0 GiB  (locked, spread: ?)
+Thu Jun 11 01:15:20 2020	12.662	Twiddle Tables
+Thu Jun 11 01:15:20 2020	12.920	Twiddle Tables:  296 MiB  (locked, spread: ?)
+Thu Jun 11 01:15:20 2020	12.921	I/O Buffers
+Thu Jun 11 01:15:20 2020	13.416	I/O Buffers:  768 MiB  (locked, spread: ?)
+Thu Jun 11 01:15:20 2020	13.416	Begin Computation
+Thu Jun 11 01:15:20 2020	13.416	InvSqrt(5)...
+Thu Jun 11 01:33:15 2020	1087.573	Finishing
+Thu Jun 11 01:34:22 2020	1154.673	Writing Hexadecimal Digits
+Thu Jun 11 01:37:58 2020	1371.226	Base Converting
+Thu Jun 11 02:14:32 2020	3564.591	Writing Decimal Digits
+Thu Jun 11 02:18:34 2020	3807.117	Verifying Base Conversion
+Thu Jun 11 02:34:59 2020	4792.194	Verifying Binary Output
+Thu Jun 11 02:35:16 2020	4809.344	Verifying Decimal Output
+Thu Jun 11 02:38:03 2020	4975.538	Verifying Hexadecimal Output
+Thu Jun 11 02:40:43 2020	5135.779	End Computation
+
+----
+
+Checksum0: 62b2a26740e4c800842158c6b7ddea2fa7719be3456af0481f84f93973c01ee6fc32ea07f1c5651afef5dd9397c248e63bb248502b594d595d2c4b5909a1260c
+Checksum1: 392ac0595d6a8db05f3eb19503a1883e9aa13b82328600d44daa7313a4a7795767431d5b549601ade5364aa2729bb044c31b2a2d6035862ba9548e2c4d17830f
