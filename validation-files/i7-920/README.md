@@ -27,3 +27,8 @@ Computation 4: "e - 20200615-010201.txt"
   Resuming was attempted, but another read error occurred on the same drive. The
   drive was replaced with a 500GB drive after copying over the checkpoint files.
 - Computation finished after about 4 days and digits were correct
+
+Computation 5: "Pi - 20200628-044855.txt"
+- pi: 500B digits
+- Started on 2020-06-15, completed on 2020-06-28
+- Digits match known results, no interruption during all 13 days

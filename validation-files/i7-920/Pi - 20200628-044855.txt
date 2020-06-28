@@ -1,0 +1,321 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                08-NHM ~ Ushio
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i7 CPU 920 @ 2.67GHz
+    Logical Cores:     8
+    Physical Cores:    4
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,672,667,125 Hz
+
+Motherboard:
+    Manufacturer:      ASUSTeK Computer INC.
+    Model:             P6T DELUXE V2
+    Version:           Rev 1.xx
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     25,264,455,680 (23.5 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Pi
+Algorithm:             Chudnovsky (1988)
+Decimal Digits:        500,000,000,050
+Hexadecimal Digits:    415,241,011,903
+Computation Mode:      Swap Mode
+Threading Mode:        Push Pool  ->  8 / ?  (randomization on)
+Working Memory:        22,853,639,168 (21.3 GiB)
+Total Memory:          24,159,191,040 (22.5 GiB)
+
+Logical Largest Checkpoint:    718,023,003,360 ( 669 GiB)
+Logical Peak Disk Usage:       2,526,220,180,920 (2.30 TiB)
+Logical Disk Bytes Read:       153,634,674,523,616 ( 140 TiB)
+Logical Disk Bytes Written:    135,118,657,383,944 ( 123 TiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "pi"
+        Algorithm : "chudnovsky"
+    }
+    ComputeSize : {
+        DecimalDigits : 500000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "swap"
+    Parallelism : {
+        TaskDecomposition : 8
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+    Memory : 24159191040
+    Checkpointing : {
+        Enabled : "true"
+        PostCheckpointCommand : ""
+    }
+    FarMemoryTuning : {
+        BytesPerSeek : 12582912
+        ParallelAccess : "none"
+    }
+    FarMemoryConfig : {
+        Framework : "disk-raid0"
+        InterleaveWidth : 262144
+        BufferPerLane : 67108864
+        Checksums : "true"
+        RawIO : "true"
+        Lanes : [
+            {   //  Lane 0
+                Path : "/mnt/y1"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 1
+                Path : "/mnt/y2"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 2
+                Path : "/mnt/y3"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 3
+                Path : "/mnt/y4"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 4
+                Path : "/mnt/y5"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 5
+                Path : "/mnt/y6"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 6
+                Path : "/mnt/y7"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 7
+                Path : "/mnt/y8"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 8
+                Path : "/mnt/y9"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 9
+                Path : "/mnt/y10"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 10
+                Path : "/mnt/y11"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 11
+                Path : "/mnt/y12"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+        ]
+    }
+}
+
+Start Date:            Mon Jun 15 08:07:26 2020
+End Date:              Sun Jun 28 04:48:49 2020
+
+Total Computation Time:    1063672.930 seconds
+Start-to-End Wall Time:    1111283.034 seconds
+
+CPU Utilization:           532.01 %  +  1.85 % kernel overhead
+Multi-core Efficiency:     66.50 %  +  0.23 % kernel overhead
+
+Last Decimal Digits:
+0505992340 4464069733 2573501014 7391768971 9054201320  :  500,000,000,000
+0336679104 2284081768 3592963294 7897780453 2589343879  :  500,000,000,050
+
+Last Hexadecimal Digits:
+2571f8795c b243b89557 77ec844ca5 fa8cdfbcc7 16acabf956  :  415,241,011,900
+99a
+
+SHA256-dec(500,000,000,051 - 500,000,000,150): 3104805d5bb07765b995193978d4e5e3d9a85f6efba1291ec86ad74fd0ff2774
+
+Dec Counts: {50000008885,50000128159,50000180770,49999950788,50000068374,49999900535,49999864496,49999913534,50000276190,49999708319}
+Hex Counts: {25952524904,25952567951,25952492393,25952684429,25952444549,25952668675,25952704176,25952267983,25952468370,25952584252,25952800403,25952665166,25952556532,25952522089,25952555210,25952504821}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1383895101691534517
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 211207830829157599
+
+Spot Check:                 Good through 500,000,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          98,185,016
+Reference Clock 2:          11,847,592
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Mon Jun 15 08:07:26 2020	0.154	Working Memory
+Mon Jun 15 08:07:38 2020	11.717	Working Memory: 21.3 GiB  (locked, spread: ?)
+Mon Jun 15 08:07:38 2020	11.717	Twiddle Tables
+Mon Jun 15 08:07:38 2020	12.190	Twiddle Tables:  477 MiB  (locked, spread: ?)
+Mon Jun 15 08:07:38 2020	12.190	I/O Buffers
+Mon Jun 15 08:07:39 2020	12.626	I/O Buffers:  768 MiB  (locked, spread: ?)
+Mon Jun 15 08:07:39 2020	12.626	Begin Computation
+Mon Jun 15 08:07:39 2020	12.626	Series CommonP2B3...  35,256,834,690 terms  (Expansion Factor = 3.270)
+Mon Jun 15 08:07:39 2020	12.626	Series: A ( 44 ) 0.000%
+Mon Jun 15 08:07:39 2020	12.689	Series: A ( 43 ) 0.000%
+Mon Jun 15 08:07:39 2020	13.473	Series: A ( 42 ) 0.001%
+Mon Jun 15 08:07:40 2020	14.429	Series: A ( 41 ) 0.001%
+Mon Jun 15 08:07:41 2020	15.454	Series: E ( 40 ) 0.002%
+Mon Jun 15 08:07:43 2020	16.510	Series: E ( 39 ) 0.003%
+Mon Jun 15 08:07:44 2020	17.956	Series: E ( 38 ) 0.004%
+Mon Jun 15 08:07:46 2020	19.821	Series: E ( 37 ) 0.005%
+Mon Jun 15 08:07:48 2020	22.402	Series: E ( 36 ) 0.006%
+Mon Jun 15 08:07:52 2020	25.807	Series: E ( 35 ) 0.008%
+Mon Jun 15 08:07:57 2020	30.578	Series: E ( 34 ) 0.011%
+Mon Jun 15 08:08:03 2020	36.588	Series: E ( 33 ) 0.014%
+Mon Jun 15 08:08:11 2020	45.424	Series: E ( 32 ) 0.018%
+Mon Jun 15 08:08:23 2020	57.206	Series: E ( 31 ) 0.023%
+Mon Jun 15 08:08:39 2020	72.960	Series: E ( 30 ) 0.030%
+Mon Jun 15 08:09:00 2020	93.710	Series: E ( 29 ) 0.039%
+Mon Jun 15 08:09:28 2020	122.504	Series: E ( 28 ) 0.050%
+Mon Jun 15 08:10:06 2020	160.018	Series: E ( 27 ) 0.065%
+Mon Jun 15 08:10:57 2020	211.387	Series: E ( 26 ) 0.085%
+Mon Jun 15 08:12:04 2020	278.044	Series: E ( 25 ) 0.110%
+Mon Jun 15 08:13:41 2020	374.999	Series: E ( 24 ) 0.143%
+Mon Jun 15 08:15:47 2020	500.662	Series: E ( 23 ) 0.186%
+Mon Jun 15 08:18:36 2020	670.312	Series: E ( 22 ) 0.241%
+Mon Jun 15 08:22:21 2020	894.977	Series: E ( 21 ) 0.312%
+Mon Jun 15 08:27:32 2020	1206.470	Series: E ( 20 ) 0.405%
+Mon Jun 15 08:34:08 2020	1602.260	Series: E ( 19 ) 0.526%
+Mon Jun 15 08:43:08 2020	2141.858	Series: E ( 18 ) 0.682%
+Mon Jun 15 08:55:06 2020	2859.733	Series: S ( 17 ) 0.885%
+Mon Jun 15 09:12:42 2020	3916.031	Series: S ( 16 ) 1.149%
+Mon Jun 15 09:38:12 2020	5445.991	Series: S ( 15 ) 1.491%
+Mon Jun 15 10:14:30 2020	7624.489	Series: S ( 14 ) 1.934%
+Mon Jun 15 11:03:05 2020	10538.568	Series: S ( 13 ) 2.510%
+Mon Jun 15 12:14:53 2020	14846.867	Series: S ( 12 ) 3.257%
+Mon Jun 15 13:48:32 2020	20466.074	Series: S ( 11 ) 4.226%
+Mon Jun 15 15:57:05 2020	28179.423	Series: S ( 10 ) 5.485%
+Mon Jun 15 19:10:02 2020	39755.525	Series: S ( 9 ) 7.120%
+Mon Jun 15 23:25:20 2020	55074.495	Series: S ( 8 ) 9.242%
+Tue Jun 16 04:54:23 2020	74817.223	Series: S ( 7 ) 11.999%
+Tue Jun 16 12:56:06 2020	103720.349	Series: S ( 6 ) 15.583%
+Tue Jun 16 23:26:38 2020	141552.063	Series: S ( 5 ) 20.243%
+Wed Jun 17 14:19:07 2020	195101.413	Series: S ( 4 ) 26.308%
+Thu Jun 18 09:20:31 2020	263585.263	Series: S ( 3 ) 34.210%
+Fri Jun 19 09:57:09 2020	352183.214	Series: S ( 2 ) 44.527%
+Sat Jun 20 22:51:20 2020	485034.027	Series: S ( 1 ) 58.037%
+Mon Jun 22 22:53:25 2020	657959.493	Series: S ( 0 ) 75.844%
+Thu Jun 25 15:37:48 2020	891022.044	Finishing Series
+Thu Jun 25 16:28:25 2020	894058.596	Large Division
+Fri Jun 26 04:47:35 2020	938408.635	InvSqrt(10005)...
+Fri Jun 26 13:09:59 2020	968553.441	Large Multiply
+Fri Jun 26 18:38:57 2020	988291.400	Verify Large Multiply
+Fri Jun 26 19:09:43 2020	990137.142	Writing Hexadecimal Digits
+Fri Jun 26 20:23:31 2020	994564.553	Base Converting
+Sat Jun 27 16:49:23 2020	1068116.939	Writing Decimal Digits
+Sat Jun 27 18:05:54 2020	1072708.420	Verifying Base Conversion
+Sun Jun 28 03:13:12 2020	1105545.925	Verifying Binary Output
+Sun Jun 28 03:20:49 2020	1106002.726	Verifying Decimal Output
+Sun Jun 28 04:06:43 2020	1108756.546	Verifying Hexadecimal Output
+Sun Jun 28 04:48:49 2020	1111283.034	End Computation
+
+----
+
+Checksum0: 2f077a588835bc2c7caaa87126b5866df614058d2b44ecc184eca76abcdbceccb09265e5a34ea82fe85778747dd879617babea1b57ea84a720962408125fb12d
+Checksum1: f0d0cccf39805231f896b1b4938f7c0a38fb6135468230b7085592e00035ece430b9a496dac4cbef8bd5a4cdb5eec07a89509dcca32f4639dd1847321c203f1b
