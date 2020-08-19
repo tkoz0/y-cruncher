@@ -32,3 +32,16 @@ Computation 5: "Pi - 20200628-044855.txt"
 - pi: 500B digits
 - Started on 2020-06-15, completed on 2020-06-28
 - Digits match known results, no interruption during all 13 days
+
+Computation 6: "Euler's Constant - 20200818-033117.txt"
+- euler-mascheroni: 100B digits
+- Started on 2020-06-28, completed on 2020-08-18 (almost 2 months)
+- This computation would run for a long time, raising concern with the old hard
+  drives in use, about half of which have SMART stats indicating problems.
+- 4 power failures occurred during the computation, y-cruncher successfully
+  recovered each time. Checkpoint files were backed up on 2020-07-28 which was
+  right after the 3rd power failure and 1 month into the computation.
+- Almost 1PB of disk IO occurred, about 80TB per hard drive. For the smaller
+  drives (250GB), this is about 320 times their capacity.
+- The computation was able to finish successfully without any hard drive issues
+  and the digits match known results.
