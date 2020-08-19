@@ -1,0 +1,128 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,394,688 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     6,078,836,736 (5.66 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Sqrt(2)
+Algorithm:             Newton's Method
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        4,581,076,800 (4.27 GiB)
+Total Memory:          4,816,428,096 (4.49 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "sqrt"
+        Argument : 2
+        Algorithm : "newton"
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Tue Jun 16 18:30:29 2020
+End Date:              Tue Jun 16 18:31:53 2020
+
+Total Computation Time:    29.958 seconds
+Start-to-End Wall Time:    83.870 seconds
+
+CPU Utilization:           373.96 %  +  0.00 % kernel overhead
+Multi-core Efficiency:     93.49 %  +  0.00 % kernel overhead
+
+Last Decimal Digits:
+1701216532 8140121075 0295863181 7477180528 1585852742  :  1,000,000,000
+3961599554 5340203994 4531708019 6307505619 7882266532  :  1,000,000,050
+
+Last Hexadecimal Digits:
+2a540f6e11 a0930be068 7602f68a20 ce196d4846 2e5dd79691  :  830,482,050
+b93155e1e3 778f27
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): da2e019c75af02b24bb635d422df5c380b0bac0c3a9c163e117f6c0db066c405
+
+Dec Counts: {100010234,99998385,99995649,99995421,100012729,100002644,100012688,99980318,99995123,99996859}
+Hex Counts: {51907293,51902487,51901842,51908233,51898658,51903932,51906577,51911480,51909218,51893845,51909988,51900733,51901951,51898824,51913400,51913605}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1717690947722016344
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 955057501064216310
+
+Spot Check:                 Good through 1,000,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          111,825,686
+Reference Clock 2:          13,537,834
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Tue Jun 16 18:30:29 2020	0.015	Working Memory
+Tue Jun 16 18:30:31 2020	1.782	Working Memory: 4.27 GiB  (locked, spread: ?)
+Tue Jun 16 18:30:31 2020	1.783	Twiddle Tables
+Tue Jun 16 18:30:31 2020	1.944	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Tue Jun 16 18:30:31 2020	1.944	Begin Computation
+Tue Jun 16 18:30:31 2020	1.944	InvSqrt(2)...
+Tue Jun 16 18:30:39 2020	9.580	Finishing
+Tue Jun 16 18:30:39 2020	9.635	Writing Hexadecimal Digits
+Tue Jun 16 18:30:50 2020	21.010	Base Converting
+Tue Jun 16 18:31:13 2020	43.276	Writing Decimal Digits
+Tue Jun 16 18:31:24 2020	54.720	Verifying Base Conversion
+Tue Jun 16 18:31:31 2020	61.839	Verifying Binary Output
+Tue Jun 16 18:31:31 2020	61.866	Verifying Decimal Output
+Tue Jun 16 18:31:42 2020	72.863	Verifying Hexadecimal Output
+Tue Jun 16 18:31:53 2020	83.870	End Computation
+
+----
+
+Checksum0: 8002f4b32cba263f37f1b862d818d08cef12181ec0e0b4118a7b38a76e2e2be35c015ca2e3e81ba9c07fa9ae8c897438e6e2e8aed188e1b81dcdd662aea88ab3
+Checksum1: 250ac5998c8e3d4f5a1d9346768e98fafae102910ece77f42561ee8ff5346f233923753a597bf72254ee8704e606f4a4ddaa481a68e0429d7b59d4067be43602

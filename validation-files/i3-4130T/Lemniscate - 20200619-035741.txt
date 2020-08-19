@@ -1,0 +1,352 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,414,464 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,192,774,144 (7.63 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Custom - Lemniscate Constant
+Algorithm:             Series-Pi
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        6,028,357,376 (5.61 GiB)
+Total Memory:          6,263,708,672 (5.83 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "custom"
+        NameShort : "Lemniscate"
+        NameLong : "Lemniscate Constant"
+        AlgorithmShort : "Series-Pi"
+        AlgorithmLong : "Series-Pi"
+        Formula : {
+            Multiply : [
+                {
+                    SeriesHypergeometric : {
+                        CoefficientP : 1
+                        CoefficientQ : 147
+                        CoefficientD : 1
+                        PolynomialP : [15435 -143136 20224 1241088 -856064 -2752512 2621440]
+                        PolynomialQ : [0 0 82944 331776 331776]
+                        PolynomialR : [105 -1408 5504 -8192 4096]
+                    }
+                }
+                {
+                    Pi : {
+                        Algorithm : "ramanujan"
+                    }
+                }
+                {
+                    Invsqrt : 7776
+                }
+            ]
+        }
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Fri Jun 19 03:10:06 2020
+End Date:              Fri Jun 19 03:57:41 2020
+
+Total Computation Time:    2796.756 seconds
+Start-to-End Wall Time:    2854.724 seconds
+
+CPU Utilization:           377.71 %  +  0.04 % kernel overhead
+Multi-core Efficiency:     94.43 %  +  0.01 % kernel overhead
+
+Last Decimal Digits:
+1319544651 5315767931 3397982384 1374935489 6405298443  :  1,000,000,000
+8334326017 0121540974 6368158746 5647814068 9727648807  :  1,000,000,050
+
+Last Hexadecimal Digits:
+1f4cf1987b b1a1453919 d051932cdc cc78e63dab a1e446080b  :  830,482,050
+f255e27546 8517b9
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): efe9a5b3dcd88ccab07aee30e092748bc4ab50fc443ee30a041677d8b0c0cee0
+
+Dec Counts: {100001282,100014944,99997357,99996763,99985898,100010799,100005956,99997855,99979596,100009600}
+Hex Counts: {51901901,51908472,51918907,51903940,51905145,51906860,51912685,51898508,51899980,51906320,51896538,51907382,51909223,51895139,51896697,51914369}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 388768976305546785
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 226055186278041247
+
+Spot Check:                 Good through 1,000,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          109,210,105
+Reference Clock 2:          13,536,971
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Fri Jun 19 03:10:06 2020	0.014	Working Memory
+Fri Jun 19 03:10:08 2020	2.346	Working Memory: 5.62 GiB  (locked, spread: ?)
+Fri Jun 19 03:10:08 2020	2.346	Twiddle Tables
+Fri Jun 19 03:10:08 2020	2.506	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Fri Jun 19 03:10:08 2020	2.506	Begin Computation
+Fri Jun 19 03:10:08 2020	2.506	Series CommonP2B3...  523,975,974 terms  (Expansion Factor = 20.257)
+Fri Jun 19 03:10:08 2020	2.506	Series: A ( 155 ) 0.000%
+Fri Jun 19 03:10:08 2020	2.525	Series: A ( 154 ) 0.004%
+Fri Jun 19 03:10:09 2020	2.580	Series: A ( 153 ) 0.013%
+Fri Jun 19 03:10:09 2020	2.646	Series: A ( 152 ) 0.022%
+Fri Jun 19 03:10:09 2020	2.717	Series: A ( 151 ) 0.031%
+Fri Jun 19 03:10:09 2020	2.793	Series: A ( 150 ) 0.040%
+Fri Jun 19 03:10:09 2020	2.872	Series: A ( 149 ) 0.049%
+Fri Jun 19 03:10:09 2020	2.955	Series: A ( 148 ) 0.058%
+Fri Jun 19 03:10:09 2020	3.037	Series: A ( 147 ) 0.067%
+Fri Jun 19 03:10:09 2020	3.122	Series: A ( 146 ) 0.076%
+Fri Jun 19 03:10:09 2020	3.209	Series: A ( 145 ) 0.085%
+Fri Jun 19 03:10:09 2020	3.294	Series: A ( 144 ) 0.094%
+Fri Jun 19 03:10:09 2020	3.384	Series: A ( 143 ) 0.103%
+Fri Jun 19 03:10:09 2020	3.475	Series: A ( 142 ) 0.112%
+Fri Jun 19 03:10:10 2020	3.563	Series: A ( 141 ) 0.121%
+Fri Jun 19 03:10:10 2020	3.657	Series: A ( 140 ) 0.130%
+Fri Jun 19 03:10:10 2020	3.751	Series: A ( 139 ) 0.138%
+Fri Jun 19 03:10:10 2020	3.842	Series: A ( 138 ) 0.147%
+Fri Jun 19 03:10:10 2020	3.981	Series: A ( 137 ) 0.156%
+Fri Jun 19 03:10:10 2020	4.078	Series: A ( 136 ) 0.165%
+Fri Jun 19 03:10:10 2020	4.173	Series: A ( 135 ) 0.174%
+Fri Jun 19 03:10:10 2020	4.271	Series: E ( 134 ) 0.183%
+Fri Jun 19 03:10:10 2020	4.370	Series: E ( 133 ) 0.192%
+Fri Jun 19 03:10:10 2020	4.470	Series: E ( 132 ) 0.201%
+Fri Jun 19 03:10:11 2020	4.578	Series: E ( 131 ) 0.211%
+Fri Jun 19 03:10:11 2020	4.692	Series: E ( 130 ) 0.221%
+Fri Jun 19 03:10:11 2020	4.818	Series: E ( 129 ) 0.231%
+Fri Jun 19 03:10:11 2020	4.974	Series: E ( 128 ) 0.242%
+Fri Jun 19 03:10:11 2020	5.108	Series: E ( 127 ) 0.254%
+Fri Jun 19 03:10:11 2020	5.248	Series: E ( 126 ) 0.265%
+Fri Jun 19 03:10:11 2020	5.400	Series: E ( 125 ) 0.278%
+Fri Jun 19 03:10:11 2020	5.551	Series: E ( 124 ) 0.291%
+Fri Jun 19 03:10:12 2020	5.720	Series: E ( 123 ) 0.305%
+Fri Jun 19 03:10:12 2020	5.938	Series: E ( 122 ) 0.319%
+Fri Jun 19 03:10:12 2020	6.126	Series: E ( 121 ) 0.334%
+Fri Jun 19 03:10:12 2020	6.329	Series: E ( 120 ) 0.350%
+Fri Jun 19 03:10:12 2020	6.547	Series: E ( 119 ) 0.367%
+Fri Jun 19 03:10:13 2020	6.764	Series: E ( 118 ) 0.384%
+Fri Jun 19 03:10:13 2020	7.017	Series: E ( 117 ) 0.402%
+Fri Jun 19 03:10:13 2020	7.260	Series: E ( 116 ) 0.421%
+Fri Jun 19 03:10:13 2020	7.509	Series: E ( 115 ) 0.441%
+Fri Jun 19 03:10:14 2020	7.781	Series: E ( 114 ) 0.462%
+Fri Jun 19 03:10:14 2020	8.099	Series: E ( 113 ) 0.484%
+Fri Jun 19 03:10:14 2020	8.382	Series: E ( 112 ) 0.507%
+Fri Jun 19 03:10:15 2020	8.694	Series: E ( 111 ) 0.531%
+Fri Jun 19 03:10:15 2020	9.061	Series: E ( 110 ) 0.556%
+Fri Jun 19 03:10:15 2020	9.403	Series: E ( 109 ) 0.582%
+Fri Jun 19 03:10:16 2020	9.771	Series: E ( 108 ) 0.609%
+Fri Jun 19 03:10:16 2020	10.207	Series: E ( 107 ) 0.638%
+Fri Jun 19 03:10:17 2020	10.610	Series: E ( 106 ) 0.668%
+Fri Jun 19 03:10:17 2020	11.066	Series: E ( 105 ) 0.700%
+Fri Jun 19 03:10:17 2020	11.527	Series: E ( 104 ) 0.733%
+Fri Jun 19 03:10:18 2020	12.038	Series: E ( 103 ) 0.768%
+Fri Jun 19 03:10:18 2020	12.551	Series: E ( 102 ) 0.804%
+Fri Jun 19 03:10:19 2020	13.099	Series: E ( 101 ) 0.842%
+Fri Jun 19 03:10:20 2020	13.648	Series: E ( 100 ) 0.882%
+Fri Jun 19 03:10:20 2020	14.280	Series: E ( 99 ) 0.923%
+Fri Jun 19 03:10:21 2020	14.939	Series: E ( 98 ) 0.967%
+Fri Jun 19 03:10:22 2020	15.562	Series: E ( 97 ) 1.013%
+Fri Jun 19 03:10:22 2020	16.288	Series: E ( 96 ) 1.061%
+Fri Jun 19 03:10:23 2020	17.056	Series: E ( 95 ) 1.111%
+Fri Jun 19 03:10:24 2020	17.765	Series: E ( 94 ) 1.163%
+Fri Jun 19 03:10:25 2020	18.562	Series: E ( 93 ) 1.218%
+Fri Jun 19 03:10:25 2020	19.488	Series: E ( 92 ) 1.276%
+Fri Jun 19 03:10:26 2020	20.399	Series: E ( 91 ) 1.336%
+Fri Jun 19 03:10:27 2020	21.386	Series: E ( 90 ) 1.399%
+Fri Jun 19 03:10:28 2020	22.418	Series: E ( 89 ) 1.466%
+Fri Jun 19 03:10:29 2020	23.494	Series: E ( 88 ) 1.535%
+Fri Jun 19 03:10:31 2020	24.606	Series: E ( 87 ) 1.607%
+Fri Jun 19 03:10:32 2020	25.850	Series: E ( 86 ) 1.683%
+Fri Jun 19 03:10:33 2020	27.064	Series: E ( 85 ) 1.763%
+Fri Jun 19 03:10:34 2020	28.423	Series: E ( 84 ) 1.846%
+Fri Jun 19 03:10:36 2020	29.826	Series: E ( 83 ) 1.934%
+Fri Jun 19 03:10:37 2020	31.240	Series: E ( 82 ) 2.025%
+Fri Jun 19 03:10:39 2020	32.773	Series: E ( 81 ) 2.121%
+Fri Jun 19 03:10:40 2020	34.442	Series: E ( 80 ) 2.221%
+Fri Jun 19 03:10:42 2020	36.091	Series: E ( 79 ) 2.326%
+Fri Jun 19 03:10:44 2020	37.798	Series: E ( 78 ) 2.436%
+Fri Jun 19 03:10:46 2020	39.856	Series: E ( 77 ) 2.551%
+Fri Jun 19 03:10:48 2020	41.877	Series: E ( 76 ) 2.672%
+Fri Jun 19 03:10:50 2020	44.066	Series: E ( 75 ) 2.798%
+Fri Jun 19 03:10:52 2020	46.300	Series: E ( 74 ) 2.931%
+Fri Jun 19 03:10:55 2020	48.631	Series: E ( 73 ) 3.069%
+Fri Jun 19 03:10:57 2020	51.070	Series: E ( 72 ) 3.214%
+Fri Jun 19 03:11:00 2020	53.703	Series: E ( 71 ) 3.367%
+Fri Jun 19 03:11:02 2020	56.399	Series: E ( 70 ) 3.526%
+Fri Jun 19 03:11:05 2020	59.389	Series: E ( 69 ) 3.693%
+Fri Jun 19 03:11:08 2020	62.457	Series: E ( 68 ) 3.867%
+Fri Jun 19 03:11:11 2020	65.551	Series: E ( 67 ) 4.050%
+Fri Jun 19 03:11:15 2020	69.006	Series: E ( 66 ) 4.242%
+Fri Jun 19 03:11:19 2020	72.682	Series: E ( 65 ) 4.443%
+Fri Jun 19 03:11:22 2020	76.334	Series: E ( 64 ) 4.653%
+Fri Jun 19 03:11:26 2020	80.182	Series: E ( 63 ) 4.874%
+Fri Jun 19 03:11:31 2020	84.732	Series: E ( 62 ) 5.104%
+Fri Jun 19 03:11:35 2020	89.238	Series: E ( 61 ) 5.346%
+Fri Jun 19 03:11:40 2020	94.070	Series: E ( 60 ) 5.599%
+Fri Jun 19 03:11:45 2020	99.087	Series: E ( 59 ) 5.864%
+Fri Jun 19 03:11:50 2020	104.258	Series: E ( 58 ) 6.142%
+Fri Jun 19 03:11:55 2020	109.549	Series: E ( 57 ) 6.433%
+Fri Jun 19 03:12:01 2020	115.393	Series: E ( 56 ) 6.738%
+Fri Jun 19 03:12:07 2020	121.311	Series: E ( 55 ) 7.057%
+Fri Jun 19 03:12:14 2020	127.886	Series: E ( 54 ) 7.392%
+Fri Jun 19 03:12:21 2020	134.589	Series: E ( 53 ) 7.742%
+Fri Jun 19 03:12:27 2020	141.317	Series: E ( 52 ) 8.109%
+Fri Jun 19 03:12:35 2020	148.809	Series: E ( 51 ) 8.494%
+Fri Jun 19 03:12:43 2020	157.120	Series: E ( 50 ) 8.896%
+Fri Jun 19 03:12:51 2020	165.295	Series: E ( 49 ) 9.318%
+Fri Jun 19 03:13:00 2020	174.434	Series: E ( 48 ) 9.761%
+Fri Jun 19 03:13:10 2020	184.491	Series: E ( 47 ) 10.224%
+Fri Jun 19 03:13:20 2020	194.351	Series: E ( 46 ) 10.709%
+Fri Jun 19 03:13:31 2020	205.241	Series: E ( 45 ) 11.218%
+Fri Jun 19 03:13:42 2020	216.200	Series: E ( 44 ) 11.750%
+Fri Jun 19 03:13:53 2020	227.521	Series: E ( 43 ) 12.308%
+Fri Jun 19 03:14:05 2020	239.095	Series: E ( 42 ) 12.893%
+Fri Jun 19 03:14:18 2020	251.748	Series: E ( 41 ) 13.506%
+Fri Jun 19 03:14:31 2020	264.645	Series: E ( 40 ) 14.148%
+Fri Jun 19 03:14:45 2020	278.875	Series: E ( 39 ) 14.821%
+Fri Jun 19 03:15:00 2020	293.592	Series: E ( 38 ) 15.526%
+Fri Jun 19 03:15:15 2020	309.192	Series: E ( 37 ) 16.265%
+Fri Jun 19 03:15:31 2020	325.478	Series: E ( 36 ) 17.040%
+Fri Jun 19 03:15:49 2020	343.330	Series: E ( 35 ) 17.852%
+Fri Jun 19 03:16:07 2020	361.133	Series: E ( 34 ) 18.702%
+Fri Jun 19 03:16:27 2020	380.950	Series: E ( 33 ) 19.594%
+Fri Jun 19 03:16:49 2020	402.695	Series: E ( 32 ) 20.529%
+Fri Jun 19 03:17:10 2020	424.396	Series: E ( 31 ) 21.508%
+Fri Jun 19 03:17:33 2020	447.100	Series: E ( 30 ) 22.536%
+Fri Jun 19 03:17:57 2020	470.800	Series: E ( 29 ) 23.612%
+Fri Jun 19 03:18:21 2020	495.484	Series: E ( 28 ) 24.741%
+Fri Jun 19 03:18:47 2020	521.024	Series: E ( 27 ) 25.925%
+Fri Jun 19 03:19:15 2020	549.131	Series: E ( 26 ) 27.166%
+Fri Jun 19 03:19:43 2020	577.322	Series: E ( 25 ) 28.468%
+Fri Jun 19 03:20:15 2020	608.624	Series: E ( 24 ) 29.833%
+Fri Jun 19 03:20:48 2020	642.238	Series: E ( 23 ) 31.265%
+Fri Jun 19 03:21:22 2020	676.469	Series: E ( 22 ) 32.767%
+Fri Jun 19 03:22:01 2020	715.096	Series: E ( 21 ) 34.342%
+Fri Jun 19 03:22:41 2020	754.761	Series: E ( 20 ) 35.995%
+Fri Jun 19 03:23:19 2020	793.491	Series: E ( 19 ) 37.730%
+Fri Jun 19 03:24:03 2020	836.839	Series: E ( 18 ) 39.551%
+Fri Jun 19 03:24:51 2020	885.140	Series: E ( 17 ) 41.462%
+Fri Jun 19 03:25:39 2020	933.429	Series: E ( 16 ) 43.469%
+Fri Jun 19 03:26:30 2020	983.778	Series: E ( 15 ) 45.575%
+Fri Jun 19 03:27:24 2020	1037.777	Series: E ( 14 ) 47.788%
+Fri Jun 19 03:28:18 2020	1091.738	Series: E ( 13 ) 50.113%
+Fri Jun 19 03:29:16 2020	1150.358	Series: E ( 12 ) 52.556%
+Fri Jun 19 03:30:18 2020	1212.160	Series: E ( 11 ) 55.125%
+Fri Jun 19 03:31:20 2020	1274.544	Series: E ( 10 ) 57.825%
+Fri Jun 19 03:32:30 2020	1343.585	Series: E ( 9 ) 60.667%
+Fri Jun 19 03:33:38 2020	1412.423	Series: E ( 8 ) 63.658%
+Fri Jun 19 03:34:58 2020	1491.988	Series: E ( 7 ) 66.809%
+Fri Jun 19 03:36:23 2020	1577.522	Series: E ( 6 ) 70.130%
+Fri Jun 19 03:37:49 2020	1663.315	Series: E ( 5 ) 73.634%
+Fri Jun 19 03:39:15 2020	1749.294	Series: E ( 4 ) 77.337%
+Fri Jun 19 03:40:54 2020	1847.630	Series: E ( 3 ) 81.256%
+Fri Jun 19 03:42:35 2020	1948.886	Series: E ( 2 ) 85.415%
+Fri Jun 19 03:44:22 2020	2056.024	Series: E ( 1 ) 89.850%
+Fri Jun 19 03:46:14 2020	2168.511	Series: E ( 0 ) 94.623%
+Fri Jun 19 03:48:17 2020	2291.444	Finishing Series
+Fri Jun 19 03:48:18 2020	2291.693	Large Division
+Fri Jun 19 03:48:30 2020	2304.013	Pi - Ramanujan (1910):
+Fri Jun 19 03:48:30 2020	2304.013	Series CommonP2B3...  125,273,445 terms  (Expansion Factor = 4.069)
+Fri Jun 19 03:48:30 2020	2304.013	Series: A ( 33 ) 0.000%
+Fri Jun 19 03:48:30 2020	2304.037	Series: A ( 32 ) 0.022%
+Fri Jun 19 03:48:30 2020	2304.108	Series: A ( 31 ) 0.067%
+Fri Jun 19 03:48:30 2020	2304.189	Series: A ( 30 ) 0.112%
+Fri Jun 19 03:48:30 2020	2304.277	Series: E ( 29 ) 0.156%
+Fri Jun 19 03:48:30 2020	2304.368	Series: E ( 28 ) 0.201%
+Fri Jun 19 03:48:30 2020	2304.468	Series: E ( 27 ) 0.249%
+Fri Jun 19 03:48:31 2020	2304.598	Series: E ( 26 ) 0.307%
+Fri Jun 19 03:48:31 2020	2304.764	Series: E ( 25 ) 0.380%
+Fri Jun 19 03:48:31 2020	2305.006	Series: E ( 24 ) 0.470%
+Fri Jun 19 03:48:31 2020	2305.267	Series: E ( 23 ) 0.581%
+Fri Jun 19 03:48:32 2020	2305.591	Series: E ( 22 ) 0.718%
+Fri Jun 19 03:48:32 2020	2306.056	Series: E ( 21 ) 0.888%
+Fri Jun 19 03:48:33 2020	2306.623	Series: E ( 20 ) 1.098%
+Fri Jun 19 03:48:33 2020	2307.321	Series: E ( 19 ) 1.357%
+Fri Jun 19 03:48:34 2020	2308.244	Series: E ( 18 ) 1.678%
+Fri Jun 19 03:48:35 2020	2309.389	Series: E ( 17 ) 2.075%
+Fri Jun 19 03:48:37 2020	2310.854	Series: E ( 16 ) 2.565%
+Fri Jun 19 03:48:39 2020	2312.706	Series: E ( 15 ) 3.172%
+Fri Jun 19 03:48:41 2020	2315.198	Series: E ( 14 ) 3.923%
+Fri Jun 19 03:48:44 2020	2318.106	Series: E ( 13 ) 4.852%
+Fri Jun 19 03:48:48 2020	2322.161	Series: E ( 12 ) 6.000%
+Fri Jun 19 03:48:53 2020	2327.168	Series: E ( 11 ) 7.422%
+Fri Jun 19 03:48:59 2020	2333.327	Series: E ( 10 ) 9.182%
+Fri Jun 19 03:49:07 2020	2341.512	Series: E ( 9 ) 11.361%
+Fri Jun 19 03:49:18 2020	2351.938	Series: E ( 8 ) 14.059%
+Fri Jun 19 03:49:31 2020	2364.841	Series: E ( 7 ) 17.404%
+Fri Jun 19 03:49:47 2020	2381.060	Series: E ( 6 ) 21.551%
+Fri Jun 19 03:50:09 2020	2403.372	Series: E ( 5 ) 26.698%
+Fri Jun 19 03:50:35 2020	2429.518	Series: E ( 4 ) 33.095%
+Fri Jun 19 03:51:11 2020	2465.310	Series: E ( 3 ) 41.058%
+Fri Jun 19 03:51:54 2020	2508.276	Series: E ( 2 ) 50.997%
+Fri Jun 19 03:52:52 2020	2565.957	Series: E ( 1 ) 63.457%
+Fri Jun 19 03:54:04 2020	2637.643	Series: E ( 0 ) 79.220%
+Fri Jun 19 03:55:38 2020	2732.289	Finishing Series
+Fri Jun 19 03:55:39 2020	2732.593	Large Division
+Fri Jun 19 03:55:51 2020	2744.968	InvSqrt(8)...
+Fri Jun 19 03:55:58 2020	2752.541	Large Multiply
+Fri Jun 19 03:56:04 2020	2758.128	Large Multiply
+Fri Jun 19 03:56:10 2020	2763.709	InvSqrt(7776)...
+Fri Jun 19 03:56:17 2020	2771.242	Large Multiply
+Fri Jun 19 03:56:23 2020	2776.842	Writing Hexadecimal Digits
+Fri Jun 19 03:56:36 2020	2789.943	Base Converting
+Fri Jun 19 03:56:58 2020	2812.363	Writing Decimal Digits
+Fri Jun 19 03:57:12 2020	2825.565	Verifying Base Conversion
+Fri Jun 19 03:57:19 2020	2832.727	Verifying Binary Output
+Fri Jun 19 03:57:19 2020	2832.755	Verifying Decimal Output
+Fri Jun 19 03:57:28 2020	2841.851	Verifying Hexadecimal Output
+Fri Jun 19 03:57:41 2020	2854.724	End Computation
+
+----
+
+Checksum0: 543b14afe48ec529b5d51b240ff18951f6546ee43e914f40cc355bd1c48dea305b94c96aad18533455ba7537a9894e7be33658bc2053fc4d42730995c069dafa
+Checksum1: 189a9545574d909da22b23b54d9a55a977413656b4af01bad39cbed68554184ed00605fd004281b4ab995499dc8b9e86d9f66809464f347d4a12036ec12d437b

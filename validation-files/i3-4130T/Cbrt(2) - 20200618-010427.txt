@@ -1,0 +1,193 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,370,528 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,192,774,144 (7.63 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Custom - Cube Root of 2
+Algorithm:             Hypergeometric Series 2
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        5,580,879,360 (5.20 GiB)
+Total Memory:          5,816,230,656 (5.42 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "custom"
+        NameShort : "Cbrt(2)"
+        NameLong : "Cube Root of 2"
+        AlgorithmShort : "Series 2"
+        AlgorithmLong : "Hypergeometric Series 2"
+        Formula : {
+            SeriesHypergeometric : {
+                CoefficientP : 5
+                CoefficientQ : 5
+                CoefficientD : 4
+                PolynomialP : [2 -3]
+                PolynomialQ : [0 -128]
+                PolynomialR : [2 -3]
+            }
+        }
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Thu Jun 18 00:50:45 2020
+End Date:              Thu Jun 18 01:04:26 2020
+
+Total Computation Time:    764.505 seconds
+Start-to-End Wall Time:    821.688 seconds
+
+CPU Utilization:           378.45 %  +  0.05 % kernel overhead
+Multi-core Efficiency:     94.61 %  +  0.01 % kernel overhead
+
+Last Decimal Digits:
+5336830226 8986246596 0399056705 1372745649 5329050299  :  1,000,000,000
+7264216120 4732031659 8858880867 7448985222 6242769927  :  1,000,000,050
+
+Last Hexadecimal Digits:
+d20adc3fa7 bfe53b9c7d e31f98c203 6fe10f0671 cc4ff491b4  :  830,482,050
+8f615ae8b9 78a44a
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): 961dc04a04264e5ff0af30fb0cd36b8ba35b9a75dc5f299224da58fbaaf0d8fb
+
+Dec Counts: {100009667,100003804,100000234,99980806,99976141,99998378,100017333,99992006,100001774,100019907}
+Hex Counts: {51919696,51912647,51914690,51888036,51910854,51911018,51903269,51901952,51905250,51889872,51899736,51908246,51911736,51904883,51899765,51900416}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1967170672141272173
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 223245911191356145
+
+Spot Check:                 Not Available
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          112,143,851
+Reference Clock 2:          13,537,187
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Thu Jun 18 00:50:45 2020	0.014	Working Memory
+Thu Jun 18 00:50:47 2020	2.167	Working Memory: 5.20 GiB  (locked, spread: ?)
+Thu Jun 18 00:50:47 2020	2.168	Twiddle Tables
+Thu Jun 18 00:50:47 2020	2.328	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Thu Jun 18 00:50:47 2020	2.328	Begin Computation
+Thu Jun 18 00:50:47 2020	2.328	Series CommonP2B3...  613,463,699 terms  (Expansion Factor = 6.417)
+Thu Jun 18 00:50:47 2020	2.328	Series: A ( 51 ) 0.000%
+Thu Jun 18 00:50:47 2020	2.340	Series: A ( 50 ) 0.005%
+Thu Jun 18 00:50:47 2020	2.422	Series: A ( 49 ) 0.034%
+Thu Jun 18 00:50:47 2020	2.517	Series: A ( 48 ) 0.062%
+Thu Jun 18 00:50:47 2020	2.614	Series: A ( 47 ) 0.090%
+Thu Jun 18 00:50:47 2020	2.719	Series: A ( 46 ) 0.119%
+Thu Jun 18 00:50:47 2020	2.824	Series: A ( 45 ) 0.147%
+Thu Jun 18 00:50:48 2020	2.936	Series: E ( 44 ) 0.175%
+Thu Jun 18 00:50:48 2020	3.047	Series: E ( 43 ) 0.204%
+Thu Jun 18 00:50:48 2020	3.168	Series: E ( 42 ) 0.234%
+Thu Jun 18 00:50:48 2020	3.309	Series: E ( 41 ) 0.269%
+Thu Jun 18 00:50:48 2020	3.502	Series: E ( 40 ) 0.309%
+Thu Jun 18 00:50:48 2020	3.699	Series: E ( 39 ) 0.356%
+Thu Jun 18 00:50:49 2020	3.933	Series: E ( 38 ) 0.409%
+Thu Jun 18 00:50:49 2020	4.192	Series: E ( 37 ) 0.470%
+Thu Jun 18 00:50:49 2020	4.545	Series: E ( 36 ) 0.541%
+Thu Jun 18 00:50:50 2020	4.910	Series: E ( 35 ) 0.621%
+Thu Jun 18 00:50:50 2020	5.317	Series: E ( 34 ) 0.715%
+Thu Jun 18 00:50:50 2020	5.830	Series: E ( 33 ) 0.821%
+Thu Jun 18 00:50:51 2020	6.397	Series: E ( 32 ) 0.944%
+Thu Jun 18 00:50:52 2020	7.100	Series: E ( 31 ) 1.086%
+Thu Jun 18 00:50:53 2020	7.921	Series: E ( 30 ) 1.248%
+Thu Jun 18 00:50:53 2020	8.855	Series: E ( 29 ) 1.435%
+Thu Jun 18 00:50:55 2020	9.942	Series: E ( 28 ) 1.650%
+Thu Jun 18 00:50:56 2020	11.216	Series: E ( 27 ) 1.897%
+Thu Jun 18 00:50:57 2020	12.737	Series: E ( 26 ) 2.181%
+Thu Jun 18 00:50:59 2020	14.500	Series: E ( 25 ) 2.508%
+Thu Jun 18 00:51:01 2020	16.535	Series: E ( 24 ) 2.883%
+Thu Jun 18 00:51:04 2020	18.944	Series: E ( 23 ) 3.315%
+Thu Jun 18 00:51:06 2020	21.736	Series: E ( 22 ) 3.812%
+Thu Jun 18 00:51:10 2020	25.075	Series: E ( 21 ) 4.383%
+Thu Jun 18 00:51:14 2020	29.014	Series: E ( 20 ) 5.040%
+Thu Jun 18 00:51:18 2020	33.431	Series: E ( 19 ) 5.796%
+Thu Jun 18 00:51:24 2020	38.980	Series: E ( 18 ) 6.666%
+Thu Jun 18 00:51:30 2020	45.089	Series: E ( 17 ) 7.666%
+Thu Jun 18 00:51:37 2020	52.400	Series: E ( 16 ) 8.817%
+Thu Jun 18 00:51:46 2020	61.023	Series: E ( 15 ) 10.141%
+Thu Jun 18 00:51:56 2020	71.288	Series: E ( 14 ) 11.666%
+Thu Jun 18 00:52:08 2020	82.944	Series: E ( 13 ) 13.420%
+Thu Jun 18 00:52:21 2020	96.235	Series: E ( 12 ) 15.441%
+Thu Jun 18 00:52:37 2020	112.133	Series: E ( 11 ) 17.768%
+Thu Jun 18 00:52:56 2020	130.912	Series: E ( 10 ) 20.449%
+Thu Jun 18 00:53:18 2020	152.974	Series: E ( 9 ) 23.539%
+Thu Jun 18 00:53:43 2020	178.791	Series: E ( 8 ) 27.103%
+Thu Jun 18 00:54:13 2020	208.641	Series: E ( 7 ) 31.214%
+Thu Jun 18 00:54:48 2020	243.860	Series: E ( 6 ) 35.962%
+Thu Jun 18 00:55:30 2020	285.029	Series: E ( 5 ) 41.450%
+Thu Jun 18 00:56:17 2020	332.406	Series: E ( 4 ) 47.801%
+Thu Jun 18 00:57:14 2020	389.527	Series: E ( 3 ) 55.165%
+Thu Jun 18 00:58:19 2020	454.682	Series: E ( 2 ) 63.728%
+Thu Jun 18 00:59:37 2020	532.701	Series: E ( 1 ) 73.728%
+Thu Jun 18 01:01:08 2020	623.304	Series: E ( 0 ) 85.513%
+Thu Jun 18 01:02:57 2020	732.185	Finishing Series
+Thu Jun 18 01:02:57 2020	732.433	Large Division
+Thu Jun 18 01:03:09 2020	744.790	Writing Hexadecimal Digits
+Thu Jun 18 01:03:22 2020	756.908	Base Converting
+Thu Jun 18 01:03:44 2020	778.951	Writing Decimal Digits
+Thu Jun 18 01:03:56 2020	791.743	Verifying Base Conversion
+Thu Jun 18 01:04:04 2020	798.909	Verifying Binary Output
+Thu Jun 18 01:04:04 2020	798.936	Verifying Decimal Output
+Thu Jun 18 01:04:14 2020	809.684	Verifying Hexadecimal Output
+Thu Jun 18 01:04:26 2020	821.688	End Computation
+
+----
+
+Checksum0: bdef639ab8f4048c593739b5ef583a389252304bb4fad8e03f6251ab64ae75ed64742c59b725178580716e35aff66f55dad3189eb65a3b3d23465acb731606dc
+Checksum1: 2424a01b1c75f5a444294cb69c96909a375db332bf58896ba9c1218b3e3f716fdfe5413a939387ce30a48c60c2ba556a317d1d6c212815c337ea48d6fdc837e8

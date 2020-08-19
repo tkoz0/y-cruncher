@@ -1,0 +1,137 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,408,480 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,192,774,144 (7.63 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Custom - 1 / e
+Algorithm:             Native Implementation
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        4,581,158,208 (4.27 GiB)
+Total Memory:          4,816,509,504 (4.49 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "custom"
+        NameShort : "e^-1"
+        NameLong : "1 / e"
+        AlgorithmShort : "Native"
+        AlgorithmLong : "Native Implementation"
+        Formula : {
+            E : {
+                Power : -1
+            }
+        }
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Tue Jun 16 22:15:08 2020
+End Date:              Tue Jun 16 22:17:33 2020
+
+Total Computation Time:    89.583 seconds
+Start-to-End Wall Time:    144.608 seconds
+
+CPU Utilization:           374.22 %  +  0.04 % kernel overhead
+Multi-core Efficiency:     93.56 %  +  0.01 % kernel overhead
+
+Last Decimal Digits:
+6370140991 6911866153 8739635243 1936590148 9370532710  :  1,000,000,000
+3034985221 9787288040 3699325094 4612575057 1630071767  :  1,000,000,050
+
+Last Hexadecimal Digits:
+306f8fb587 ea6b123164 8de4ec3fa5 d51e3ae486 5f14455ec0  :  830,482,050
+e347e5ec61 5e2d22
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): cd3bf5c92986811e899659adc37b928a7c041b545a0781e5946702bdbb0d7e51
+
+Dec Counts: {99995052,100006291,99993262,99989260,100000932,100014265,99999011,99991593,100012145,99998239}
+Hex Counts: {51917378,51888957,51902102,51908367,51909519,51895486,51911825,51920656,51894795,51907372,51901884,51909040,51902197,51906046,51913082,51893360}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 2291994770147325866
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 747033340749029935
+
+Spot Check:                 Not Available
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          120,418,345
+Reference Clock 2:          13,541,069
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Tue Jun 16 22:15:08 2020	0.014	Working Memory
+Tue Jun 16 22:15:10 2020	1.786	Working Memory: 4.27 GiB  (locked, spread: ?)
+Tue Jun 16 22:15:10 2020	1.786	Twiddle Tables
+Tue Jun 16 22:15:10 2020	1.946	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Tue Jun 16 22:15:10 2020	1.946	Begin Computation
+Tue Jun 16 22:15:10 2020	1.946	e - exp(-1):
+Tue Jun 16 22:15:10 2020	1.946	Series Hyperdescent...  130,202,835 terms  (Expansion Factor = 1.000)
+Tue Jun 16 22:16:05 2020	57.109	Finishing Series
+Tue Jun 16 22:16:05 2020	57.109	Large Division
+Tue Jun 16 22:16:18 2020	69.428	Writing Hexadecimal Digits
+Tue Jun 16 22:16:29 2020	81.017	Base Converting
+Tue Jun 16 22:16:51 2020	103.117	Writing Decimal Digits
+Tue Jun 16 22:17:04 2020	115.407	Verifying Base Conversion
+Tue Jun 16 22:17:11 2020	122.572	Verifying Binary Output
+Tue Jun 16 22:17:11 2020	122.599	Verifying Decimal Output
+Tue Jun 16 22:17:22 2020	134.076	Verifying Hexadecimal Output
+Tue Jun 16 22:17:33 2020	144.608	End Computation
+
+----
+
+Checksum0: 1b533e6bcf3f3ebac0afc51938095f1fd69cbe90c86a088bd3ac55eca9701fc488d0698146d93a2f2792e50c9ede12fd7dde873870562aa871492dd08ff030d9
+Checksum1: 82c1c173c09d90e735616bb0c290ad69622fbd849f8eb9c3ce140da32fc5b35264babd2d7fbf8eb9c00b664f3200cfa313e4bcebf9cf207df7c0e0ee9c1b552f

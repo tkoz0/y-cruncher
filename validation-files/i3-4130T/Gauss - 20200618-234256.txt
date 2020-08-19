@@ -1,0 +1,171 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,329,728 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,192,774,144 (7.63 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Custom - Gauss's Constant
+Algorithm:             1 / AGM(1, Sqrt(2))
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        5,890,360,448 (5.49 GiB)
+Total Memory:          6,125,711,744 (5.70 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "custom"
+        NameShort : "Gauss"
+        NameLong : "Gauss's Constant"
+        AlgorithmShort : "AGM"
+        AlgorithmLong : "1 / AGM(1, Sqrt(2))"
+        Formula : {
+            Power : [
+                {
+                    AGM : {
+                        Sqrt : 2
+                    }
+                }
+                -1
+            ]
+        }
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Thu Jun 18 23:26:44 2020
+End Date:              Thu Jun 18 23:42:56 2020
+
+Total Computation Time:    914.020 seconds
+Start-to-End Wall Time:    972.036 seconds
+
+CPU Utilization:           380.46 %  +  0.04 % kernel overhead
+Multi-core Efficiency:     95.11 %  +  0.01 % kernel overhead
+
+Last Decimal Digits:
+6820393408 5829216730 2166890948 1540437528 0544336610  :  1,000,000,000
+7304289330 8918335037 5235868184 4362000904 3351991253  :  1,000,000,050
+
+Last Hexadecimal Digits:
+b697ff226d 56cedb2e67 86ca515aca 9205cefd94 aa0c09d2d6  :  830,482,050
+7e1920f7a3 76c001
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): cae968e5aa33038197632d22c8ce43745f51638f191249b0707d01d01c8953b4
+
+Dec Counts: {100001625,100009669,99981601,100006234,99993929,99994926,100004818,99990952,100014939,100001357}
+Hex Counts: {51900562,51910653,51899425,51908846,51918193,51898315,51900883,51892895,51898866,51899676,51905323,51897854,51915446,51911516,51914212,51909401}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1927841372646920390
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 639488978087164098
+
+Spot Check:                 Not Available
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          112,120,533
+Reference Clock 2:          13,537,187
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Thu Jun 18 23:26:44 2020	0.015	Working Memory
+Thu Jun 18 23:26:46 2020	2.299	Working Memory: 5.49 GiB  (locked, spread: ?)
+Thu Jun 18 23:26:46 2020	2.299	Twiddle Tables
+Thu Jun 18 23:26:46 2020	2.460	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Thu Jun 18 23:26:46 2020	2.460	Begin Computation
+Thu Jun 18 23:26:46 2020	2.460	InvSqrt(2)...
+Thu Jun 18 23:26:54 2020	10.059	AGM(1,x)
+Thu Jun 18 23:27:18 2020	34.030	AGM: -2
+Thu Jun 18 23:27:47 2020	63.474	AGM: -5
+Thu Jun 18 23:28:17 2020	93.006	AGM: -10
+Thu Jun 18 23:28:46 2020	122.095	AGM: -21
+Thu Jun 18 23:29:15 2020	151.542	AGM: -43
+Thu Jun 18 23:29:45 2020	180.852	AGM: -86
+Thu Jun 18 23:30:14 2020	210.424	AGM: -174
+Thu Jun 18 23:30:44 2020	239.923	AGM: -348
+Thu Jun 18 23:31:13 2020	268.975	AGM: -698
+Thu Jun 18 23:31:42 2020	298.418	AGM: -1,396
+Thu Jun 18 23:32:12 2020	327.883	AGM: -2,793
+Thu Jun 18 23:32:41 2020	357.185	AGM: -5,588
+Thu Jun 18 23:33:10 2020	386.669	AGM: -11,176
+Thu Jun 18 23:33:40 2020	416.161	AGM: -22,353
+Thu Jun 18 23:34:09 2020	445.736	AGM: -44,707
+Thu Jun 18 23:34:39 2020	474.943	AGM: -89,415
+Thu Jun 18 23:35:08 2020	504.496	AGM: -178,831
+Thu Jun 18 23:35:38 2020	533.853	AGM: -357,662
+Thu Jun 18 23:36:07 2020	563.119	AGM: -715,325
+Thu Jun 18 23:36:36 2020	592.195	AGM: -1,430,651
+Thu Jun 18 23:37:05 2020	621.280	AGM: -2,861,304
+Thu Jun 18 23:37:34 2020	650.311	AGM: -5,722,608
+Thu Jun 18 23:38:03 2020	679.511	AGM: -11,445,217
+Thu Jun 18 23:38:33 2020	708.767	AGM: -22,890,436
+Thu Jun 18 23:39:02 2020	737.909	AGM: -45,780,873
+Thu Jun 18 23:39:31 2020	767.201	AGM: -91,561,746
+Thu Jun 18 23:40:00 2020	796.426	AGM: -183,123,493
+Thu Jun 18 23:40:29 2020	825.638	AGM: -366,246,988
+Thu Jun 18 23:40:59 2020	855.192	AGM: -732,493,976
+Thu Jun 18 23:41:28 2020	884.610	AGM: Final
+Thu Jun 18 23:41:29 2020	884.803	Inverting
+Thu Jun 18 23:41:38 2020	894.280	Writing Hexadecimal Digits
+Thu Jun 18 23:41:51 2020	906.929	Base Converting
+Thu Jun 18 23:42:13 2020	929.128	Writing Decimal Digits
+Thu Jun 18 23:42:26 2020	942.174	Verifying Base Conversion
+Thu Jun 18 23:42:33 2020	949.348	Verifying Binary Output
+Thu Jun 18 23:42:33 2020	949.375	Verifying Decimal Output
+Thu Jun 18 23:42:43 2020	959.444	Verifying Hexadecimal Output
+Thu Jun 18 23:42:56 2020	972.036	End Computation
+
+----
+
+Checksum0: 9ca35b2813e52ab29e36847a32e47f01cb44346f8563e12daa725afb5f9c32dda4cc9f3dafabc5bdd9fc738d5edce64d68d77efe86d43e79b192fd5ab4c3dc24
+Checksum1: 859fdb0204859ada471c1dc6c88876f1f79e80ec120b6a0a9ffcf60456cc1c8b8a11af4e446fa823017fd20e50b8f74e5ad688e3c62ced59ac5726a3c130dd42

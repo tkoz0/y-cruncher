@@ -1,0 +1,163 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,433,264 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,192,774,144 (7.63 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Custom - 1 / Pi
+Algorithm:             Native Implementation
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        5,059,877,952 (4.71 GiB)
+Total Memory:          5,295,229,248 (4.93 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "custom"
+        NameShort : "Pi^-1"
+        NameLong : "1 / Pi"
+        AlgorithmShort : "Native"
+        AlgorithmLong : "Native Implementation"
+        Formula : {
+            Pi : {
+                Power : -1
+            }
+        }
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Tue Jun 16 22:24:12 2020
+End Date:              Tue Jun 16 22:30:16 2020
+
+Total Computation Time:    309.828 seconds
+Start-to-End Wall Time:    364.346 seconds
+
+CPU Utilization:           378.58 %  +  0.07 % kernel overhead
+Multi-core Efficiency:     94.64 %  +  0.02 % kernel overhead
+
+Last Decimal Digits:
+8353135948 1941253253 7289346920 8840600764 2348059259  :  1,000,000,000
+4387736332 7867083182 8310748598 7814341059 5551287285  :  1,000,000,050
+
+Last Hexadecimal Digits:
+e292ad9266 53f5177765 bbce836101 0e715e94aa cd369d9e33  :  830,482,050
+d9dad882f5 a3800c
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): f7799aa7558484c9bc249f1e69bfe011abbb470e44f4f6fdee7f3f2df6c81a01
+
+Dec Counts: {99990793,99999420,100008054,99985326,100002740,100005826,100005804,99994937,100014267,99992883}
+Hex Counts: {51906026,51910748,51898205,51901719,51894212,51909164,51914930,51901225,51906154,51914545,51907795,51902859,51908973,51906739,51893650,51905122}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 2281610705357540199
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 1938599034465155599
+
+Spot Check:                 Not Available
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          107,619,732
+Reference Clock 2:          13,541,716
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Tue Jun 16 22:24:12 2020	0.014	Working Memory
+Tue Jun 16 22:24:14 2020	1.969	Working Memory: 4.71 GiB  (locked, spread: ?)
+Tue Jun 16 22:24:14 2020	1.969	Twiddle Tables
+Tue Jun 16 22:24:14 2020	2.128	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Tue Jun 16 22:24:14 2020	2.128	Begin Computation
+Tue Jun 16 22:24:14 2020	2.128	Pi - Chudnovsky (1988):
+Tue Jun 16 22:24:14 2020	2.128	Series CommonP2B3...  70,513,685 terms  (Expansion Factor = 2.699)
+Tue Jun 16 22:24:14 2020	2.128	Series: A ( 23 ) 0.000%
+Tue Jun 16 22:24:14 2020	2.131	Series: A ( 22 ) 0.005%
+Tue Jun 16 22:24:14 2020	2.198	Series: A ( 21 ) 0.073%
+Tue Jun 16 22:24:14 2020	2.278	Series: E ( 20 ) 0.141%
+Tue Jun 16 22:24:14 2020	2.365	Series: E ( 19 ) 0.209%
+Tue Jun 16 22:24:14 2020	2.464	Series: E ( 18 ) 0.284%
+Tue Jun 16 22:24:14 2020	2.602	Series: E ( 17 ) 0.385%
+Tue Jun 16 22:24:15 2020	2.808	Series: E ( 16 ) 0.523%
+Tue Jun 16 22:24:15 2020	3.093	Series: E ( 15 ) 0.711%
+Tue Jun 16 22:24:15 2020	3.553	Series: E ( 14 ) 0.965%
+Tue Jun 16 22:24:16 2020	4.126	Series: E ( 13 ) 1.311%
+Tue Jun 16 22:24:17 2020	4.962	Series: E ( 12 ) 1.781%
+Tue Jun 16 22:24:18 2020	6.078	Series: E ( 11 ) 2.420%
+Tue Jun 16 22:24:20 2020	7.693	Series: E ( 10 ) 3.287%
+Tue Jun 16 22:24:22 2020	10.072	Series: E ( 9 ) 4.467%
+Tue Jun 16 22:24:25 2020	13.433	Series: E ( 8 ) 6.070%
+Tue Jun 16 22:24:30 2020	18.256	Series: E ( 7 ) 8.250%
+Tue Jun 16 22:24:37 2020	25.102	Series: E ( 6 ) 11.216%
+Tue Jun 16 22:24:47 2020	34.999	Series: E ( 5 ) 15.253%
+Tue Jun 16 22:25:01 2020	48.799	Series: E ( 4 ) 20.753%
+Tue Jun 16 22:25:20 2020	68.359	Series: E ( 3 ) 28.258%
+Tue Jun 16 22:25:46 2020	94.339	Series: E ( 2 ) 38.520%
+Tue Jun 16 22:26:24 2020	131.737	Series: E ( 1 ) 52.604%
+Tue Jun 16 22:27:19 2020	187.443	Series: E ( 0 ) 72.083%
+Tue Jun 16 22:28:36 2020	263.698	Finishing Series
+Tue Jun 16 22:28:36 2020	264.001	Large Division
+Tue Jun 16 22:28:48 2020	276.442	InvSqrt(10005)...
+Tue Jun 16 22:28:56 2020	284.014	Large Multiply
+Tue Jun 16 22:29:01 2020	289.618	Writing Hexadecimal Digits
+Tue Jun 16 22:29:13 2020	301.029	Base Converting
+Tue Jun 16 22:29:35 2020	323.368	Writing Decimal Digits
+Tue Jun 16 22:29:47 2020	335.087	Verifying Base Conversion
+Tue Jun 16 22:29:54 2020	342.243	Verifying Binary Output
+Tue Jun 16 22:29:54 2020	342.270	Verifying Decimal Output
+Tue Jun 16 22:30:05 2020	353.097	Verifying Hexadecimal Output
+Tue Jun 16 22:30:16 2020	364.346	End Computation
+
+----
+
+Checksum0: 2edd22bf4de10d30e69c3f96949ee4f9868ff5318b8a3f736a35265aa52786641053926b37c84556e5e96da30546ecb7ba170c3f2ee3ef81b2987ad9de7e5001
+Checksum1: 2913aa627e602f17e40d54e3b4bc2c68e97cb542d11a2add73cffe87ecf572dd50e1c4c855be3af4c377518fda3f8971a804f0d2f0d6da8b8bfed75386051975

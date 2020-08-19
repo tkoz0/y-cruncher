@@ -1,0 +1,157 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.8 Build 9506
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 4.15.0-106-generic x86_64
+
+Processor(s):
+    Name:              Intel(R) Core(TM) i3-4130T CPU @ 2.90GHz
+    Logical Cores:     4
+    Physical Cores:    2
+    Sockets:           1
+    NUMA Nodes:        1
+    Base Frequency:    2,893,302,992 Hz
+
+Motherboard:
+    Manufacturer:      IBM
+    Model:             00KC500
+    Version:           
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     8,192,774,144 (7.63 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Custom - Sine of 1
+Algorithm:             2 Sin(1/2) Cos(1/2)
+Decimal Digits:        1,000,000,050
+Hexadecimal Digits:    830,482,066
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  4 / ?  (randomization on)
+Working Memory:        5,060,122,752 (4.71 GiB)
+Total Memory:          5,295,474,048 (4.93 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "custom"
+        NameShort : "Sin(1)"
+        NameLong : "Sine of 1"
+        AlgorithmShort : "Half Angle Formula"
+        AlgorithmLong : "2 Sin(1/2) Cos(1/2)"
+        Formula : {
+            Multiply : [
+                {
+                    SeriesHyperdescent : {
+                        CoefficientP : 1
+                        CoefficientQ : 1
+                        CoefficientD : 1
+                        PolynomialP : [1]
+                        PolynomialQ : [0 -8 -16]
+                    }
+                }
+                {
+                    SeriesHyperdescent : {
+                        CoefficientP : 1
+                        CoefficientQ : 1
+                        CoefficientD : 1
+                        PolynomialP : [1]
+                        PolynomialQ : [0 8 -16]
+                    }
+                }
+            ]
+        }
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 4
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+}
+
+Start Date:            Sat Jun 20 01:45:26 2020
+End Date:              Sat Jun 20 01:49:07 2020
+
+Total Computation Time:    156.637 seconds
+Start-to-End Wall Time:    221.082 seconds
+
+CPU Utilization:           378.57 %  +  0.03 % kernel overhead
+Multi-core Efficiency:     94.64 %  +  0.01 % kernel overhead
+
+Last Decimal Digits:
+7823167751 2586983726 4770810101 6736460719 7823171666  :  1,000,000,000
+9033092461 0372555380 9653277149 2039083967 8846017285  :  1,000,000,050
+
+Last Hexadecimal Digits:
+48f26d6f94 642e278276 59671cc768 d30297c123 aa01ac6525  :  830,482,050
+1699a7c2b2 e4a41e
+
+SHA256-dec(1,000,000,051 - 1,000,000,150): a74f7c5bb80d7a1d3799c41f5a55d91644a28b288934ab114155f61a9bdd355f
+
+Dec Counts: {99991181,99994625,100009016,99998472,100005983,99989203,100001238,100012398,100001660,99996274}
+Hex Counts: {51912503,51903602,51914978,51908488,51909288,51915587,51898401,51914305,51910479,51905408,51906643,51889436,51900832,51895762,51901316,51895038}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 2260473308641119266
+Hex Hash: Floor(|x| * 16^hex) mod (2^61 - 1) = 315765496365979088
+
+Spot Check:                 Not Available
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          109,185,663
+Reference Clock 2:          13,539,990
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Sat Jun 20 01:45:26 2020	0.014	Working Memory
+Sat Jun 20 01:45:28 2020	1.968	Working Memory: 4.71 GiB  (locked, spread: ?)
+Sat Jun 20 01:45:28 2020	1.968	Twiddle Tables
+Sat Jun 20 01:45:28 2020	2.127	Twiddle Tables:  224 MiB  (locked, spread: ?)
+Sat Jun 20 01:45:28 2020	2.128	Begin Computation
+Sat Jun 20 01:45:28 2020	2.128	Series Hyperdescent...  62,770,545 terms  (Expansion Factor = 1.000)
+Sat Jun 20 01:46:21 2020	54.337	Finishing Series
+Sat Jun 20 01:46:21 2020	54.528	Large Division
+Sat Jun 20 01:46:33 2020	66.641	Series Hyperdescent...  62,770,545 terms  (Expansion Factor = 1.000)
+Sat Jun 20 01:47:25 2020	118.634	Finishing Series
+Sat Jun 20 01:47:25 2020	118.826	Large Division
+Sat Jun 20 01:47:37 2020	130.991	Large Multiply
+Sat Jun 20 01:47:43 2020	136.531	Writing Hexadecimal Digits
+Sat Jun 20 01:47:56 2020	150.228	Base Converting
+Sat Jun 20 01:48:19 2020	172.462	Writing Decimal Digits
+Sat Jun 20 01:48:33 2020	186.461	Verifying Base Conversion
+Sat Jun 20 01:48:40 2020	193.613	Verifying Binary Output
+Sat Jun 20 01:48:40 2020	193.640	Verifying Decimal Output
+Sat Jun 20 01:48:53 2020	207.294	Verifying Hexadecimal Output
+Sat Jun 20 01:49:07 2020	221.082	End Computation
+
+----
+
+Checksum0: e246f094246548fbadda39e2a748858352e48388ade570ca4d147e2d60fc19d970ed41ebd6e31cf2990f89fce04736648bdf731e396c42f616f974845dcca52a
+Checksum1: e087919ee71e6c56f73f64dc9af0cd1eb3b83a78ea35be27a08d8cb9748e6e5f34a291095d9209091ca603ce61e2edd463721832f67e34465b44c7770c6451d0
