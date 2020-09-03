@@ -45,3 +45,8 @@ Computation 6: "Euler's Constant - 20200818-033117.txt"
   drives (250GB), this is about 320 times their capacity.
 - The computation was able to finish successfully without any hard drive issues
   and the digits match known results.
+
+Computation 7: "e - 20200901-105206.txt"
+- Run from 2020-08-26 to 2020-09-01, about 6 days without interruption
+- Successful first computation with the newer hard drives (12x500GB)
+- CPU utilization ~79%, up from 64% with the slower hard drives
