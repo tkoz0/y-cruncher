@@ -1,0 +1,311 @@
+﻿y-cruncher Checkpoint File - DO NOT EDIT!!!
+
+///////////////////////////////////////////////////////////////////////////////
+//  -3
+
+Program Version: 	0.7.8 Build 9506 (Linux/08-NHM ~ Ushio)
+Sequence Number: 	1135
+Largest Checkpoint: 	1114839910088
+
+Hash: 	6d374b197b6128183cd42de0c49550a21f3812c3f09162da4fb9023b5b17c78a
+
+
+///////////////////////////////////////////////////////////////////////////////
+//  -2
+{
+    Constant : {
+        Constant : "pi"
+        Algorithm : "chudnovsky"
+    }
+    ComputeSize : {
+        DecimalDigits : 1000000000050
+        EnableHexDigits : "true"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : -1
+    }
+    OutputVerify : "true"
+    Mode : "swap"
+    Parallelism : {
+        TaskDecomposition : 8
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+        MaxSequentialDispatch : 64
+    }
+    Allocator : {
+        Allocator : "mmap"
+        LargePages : "attempt"
+        LockedPages : "attempt"
+    }
+    Memory : 24159191040
+    Checkpointing : {
+        Enabled : "true"
+        PostCheckpointCommand : ""
+    }
+    FarMemoryTuning : {
+        BytesPerSeek : 6291456
+        ParallelAccess : "none"
+    }
+    FarMemoryConfig : {
+        Framework : "disk-raid0"
+        InterleaveWidth : 262144
+        BufferPerLane : 67108864
+        Checksums : "true"
+        RawIO : "true"
+        Lanes : [
+            {   //  Lane 0
+                Path : "/mnt/y00"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 1
+                Path : "/mnt/y01"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 2
+                Path : "/mnt/y02"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 3
+                Path : "/mnt/y03"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 4
+                Path : "/mnt/y04"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 5
+                Path : "/mnt/y05"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 6
+                Path : "/mnt/y06"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 7
+                Path : "/mnt/y07"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 8
+                Path : "/mnt/y08"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 9
+                Path : "/mnt/y09"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 10
+                Path : "/mnt/y10"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+            {   //  Lane 11
+                Path : "/mnt/y11"
+                BufferAllocator : {
+                    Allocator : "mmap"
+                    LargePages : "attempt"
+                    LockedPages : "attempt"
+                }
+                WorkerThreadCores : []
+                WorkerThreadPriority : 2
+            }
+        ]
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//  -1
+seed              :	-5792119397600544647
+date_start        :	Tue Sep  1 14:35:08 2020
+epoch_millis_start:	1598970908666
+total.wall_time   :	4698009532766862866
+total.user_time   :	4710332887228921938
+total.kernel_time :	4672812605961792389
+{
+    bytes_peak : 3094394663536
+    bytes_read : 186946099422548
+    bytes_written : 170622048294724
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//  0
+Frame:	NormalFloatSessionS::run()
+Step:	0
+
+///////////////////////////////////////////////////////////////////////////////
+//  1
+Frame:	Functions::Pi_Series_SwapFloatO::run()
+Step:	0
+
+///////////////////////////////////////////////////////////////////////////////
+//  2
+Frame:	BinarySplitting::CommonP2B3::PSR_SeriesS::run()
+Step:	0
+
+///////////////////////////////////////////////////////////////////////////////
+//  3
+Frame:	BinarySplitting::CommonP2B3::PSR_SeriesPartsS::run()
+Step:	1
+PSR:	1
+Object:	ycr_checkpoint880_1_P1.sf
+    T   :	0
+    exp :	72694764309
+    L   :	30400774488
+    AL  :	30400774492
+    sign:	1
+Object:	ycr_checkpoint880_1_Q1.sf
+    T   :	0
+    exp :	72694764309
+    L   :	30400774488
+    AL  :	30400774491
+    sign:	1
+
+///////////////////////////////////////////////////////////////////////////////
+//  4
+Frame:	BinarySplitting::CommonP2B3::PSR_BlockS::run()
+Step:	1
+Index a:	16780726319
+Index b:	29213892149
+Object:	ycr_checkpoint1135_0_P0.sf
+    T   :	0
+    exp :	0
+    L   :	30400774487
+    AL  :	30400774491
+    sign:	1
+Object:	ycr_checkpoint1135_0_Q0.sf
+    T   :	0
+    exp :	3496827889
+    L   :	26903946598
+    AL  :	26903946600
+    sign:	1
+Object:	ycr_checkpoint1135_0_R0.sf
+    T   :	0
+    exp :	0
+    L   :	21248718567
+    AL  :	21248718572
+    sign:	1
+
+///////////////////////////////////////////////////////////////////////////////
+//  2147483647
+Tue Sep  1 14:35:09 2020	0.351	Working Memory
+Tue Sep  1 14:35:24 2020	15.468	Working Memory: 21.3 GiB  (locked, spread: ?)
+Tue Sep  1 14:35:24 2020	15.468	Twiddle Tables
+Tue Sep  1 14:35:24 2020	16.170	Twiddle Tables:  477 MiB  (locked, spread: ?)
+Tue Sep  1 14:35:24 2020	16.170	I/O Buffers
+Tue Sep  1 14:35:25 2020	16.540	I/O Buffers:  768 MiB  (locked, spread: ?)
+Tue Sep  1 14:35:25 2020	16.540	Begin Computation
+Tue Sep  1 14:35:25 2020	16.540	Series CommonP2B3...  70,513,669,364 terms  (Expansion Factor = 3.334)
+Tue Sep  1 14:35:25 2020	16.540	Series: A ( 47 ) 0.000%
+Tue Sep  1 14:35:25 2020	16.981	Series: A ( 46 ) 0.000%
+Tue Sep  1 14:35:26 2020	17.888	Series: A ( 45 ) 0.001%
+Tue Sep  1 14:35:27 2020	18.909	Series: E ( 44 ) 0.001%
+Tue Sep  1 14:35:28 2020	19.994	Series: E ( 43 ) 0.001%
+Tue Sep  1 14:35:29 2020	21.167	Series: E ( 42 ) 0.002%
+Tue Sep  1 14:35:31 2020	22.745	Series: E ( 41 ) 0.002%
+Tue Sep  1 14:35:33 2020	24.885	Series: E ( 40 ) 0.003%
+Tue Sep  1 14:35:36 2020	27.597	Series: E ( 39 ) 0.003%
+Tue Sep  1 14:35:40 2020	31.617	Series: E ( 38 ) 0.004%
+Tue Sep  1 14:35:45 2020	36.723	Series: E ( 37 ) 0.006%
+Tue Sep  1 14:35:52 2020	43.722	Series: E ( 36 ) 0.007%
+Tue Sep  1 14:36:01 2020	52.802	Series: E ( 35 ) 0.010%
+Tue Sep  1 14:36:13 2020	64.945	Series: E ( 34 ) 0.012%
+Tue Sep  1 14:36:29 2020	81.268	Series: E ( 33 ) 0.016%
+Tue Sep  1 14:36:51 2020	102.853	Series: E ( 32 ) 0.021%
+Tue Sep  1 14:37:21 2020	132.483	Series: E ( 31 ) 0.027%
+Tue Sep  1 14:38:02 2020	173.852	Series: E ( 30 ) 0.034%
+Tue Sep  1 14:38:58 2020	229.633	Series: E ( 29 ) 0.044%
+Tue Sep  1 14:40:11 2020	302.870	Series: E ( 28 ) 0.057%
+Tue Sep  1 14:41:51 2020	403.044	Series: E ( 27 ) 0.074%
+Tue Sep  1 14:43:59 2020	530.362	Series: E ( 26 ) 0.095%
+Tue Sep  1 14:46:56 2020	707.902	Series: E ( 25 ) 0.123%
+Tue Sep  1 14:50:46 2020	938.158	Series: E ( 24 ) 0.159%
+Tue Sep  1 14:55:54 2020	1245.865	Series: E ( 23 ) 0.206%
+Tue Sep  1 15:03:11 2020	1682.844	Series: E ( 22 ) 0.266%
+Tue Sep  1 15:12:12 2020	2224.330	Series: E ( 21 ) 0.343%
+Tue Sep  1 15:25:19 2020	3011.039	Series: S ( 20 ) 0.444%
+Tue Sep  1 15:42:39 2020	4051.187	Series: S ( 19 ) 0.573%
+Tue Sep  1 16:06:38 2020	5489.376	Series: S ( 18 ) 0.741%
+Tue Sep  1 16:40:11 2020	7502.971	Series: S ( 17 ) 0.957%
+Tue Sep  1 17:24:02 2020	10133.798	Series: S ( 16 ) 1.236%
+Tue Sep  1 18:29:19 2020	14050.840	Series: S ( 15 ) 1.597%
+Tue Sep  1 19:53:17 2020	19088.931	Series: S ( 14 ) 2.064%
+Tue Sep  1 21:38:58 2020	25429.867	Series: S ( 13 ) 2.666%
+Wed Sep  2 00:13:45 2020	34716.970	Series: S ( 12 ) 3.445%
+Wed Sep  2 03:44:02 2020	47334.294	Series: S ( 11 ) 4.452%
+Wed Sep  2 08:33:07 2020	64678.581	Series: S ( 10 ) 5.753%
+Wed Sep  2 15:06:37 2020	88288.355	Series: S ( 9 ) 7.436%
+Wed Sep  2 23:40:16 2020	119108.060	Series: S ( 8 ) 9.611%
+Thu Sep  3 10:59:52 2020	159883.588	Series: S ( 7 ) 12.426%
+Fri Sep  4 02:31:42 2020	215794.102	Series: S ( 6 ) 16.068%
+Fri Sep  4 22:28:54 2020	287626.202	Series: S ( 5 ) 20.784%
+Sun Sep  6 03:10:29 2020	390920.974	Series: S ( 4 ) 26.895%
+Mon Sep  7 17:34:42 2020	529173.354	Series: S ( 3 ) 34.825%
+Wed Sep  9 15:46:52 2020	695504.234	Series: S ( 2 ) 45.131%
+Sat Sep 12 12:11:51 2020	941803.163	Series: S ( 1 ) 58.570%

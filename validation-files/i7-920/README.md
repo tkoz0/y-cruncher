@@ -50,3 +50,9 @@ Computation 7: "e - 20200901-105206.txt"
 - Run from 2020-08-26 to 2020-09-01, about 6 days without interruption
 - Successful first computation with the newer hard drives (12x500GB)
 - CPU utilization ~79%, up from 64% with the slower hard drives
+
+Computation 8: "y-cruncher Checkpoint File (Pi 1T 20200916).txt
+- Run from 2020-09-01 to 2020-09-15
+- y-cruncher encountered a read error
+- The disk mounted at /mnt/y07 failed during operation, data is unreadable
+- Computation cannot continue, must restart from beginning
