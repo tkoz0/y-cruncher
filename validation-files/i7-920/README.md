@@ -56,3 +56,8 @@ Computation 8: "y-cruncher Checkpoint File (Pi 1T 20200916).txt
 - y-cruncher encountered a read error
 - The disk mounted at /mnt/y07 failed during operation, data is unreadable
 - Computation cannot continue, must restart from beginning
+
+Computation 9: "Pi - 20201010-112335.txt"
+- Run from 2020-09-16 to 2020-10-10 (24 days)
+- This was a reattempt due to failing the first time (computation 8)
+- Successful completion, no interruptions during computation
